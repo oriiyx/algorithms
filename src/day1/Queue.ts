@@ -2,6 +2,7 @@ type Node<T> = {
     value: T,
     next?: Node<T>,
 }
+
 export default class Queue<T> {
     public length: number;
     private head?: Node<T>;
@@ -25,14 +26,16 @@ export default class Queue<T> {
     }
 
     deque(): T | undefined {
-        if (!this.head) {
-            return undefined
+        this.length = Math.max(0, this.length - 1);
+        if (this.length === 0) {
+            const head = this.head;
+            this.head = undefined;
+            this.tail = undefined;
+            return head?.value;
         }
 
-        this.length--;
-
-        const head = this.head;
-        this.head = this.head.next;
+        const head = this.head as Node<T>;
+        this.head = head.next;
 
         // free
         head.next = undefined;
