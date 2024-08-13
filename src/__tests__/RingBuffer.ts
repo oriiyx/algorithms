@@ -1,6 +1,6 @@
 import RingBuffer from "@code/RingBuffer";
 
-test("RingBuffer", function() {
+test("RingBuffer", function () {
     const buffer = new RingBuffer<number>();
 
     buffer.push(5);

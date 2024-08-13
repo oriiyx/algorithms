@@ -1,5 +1,5 @@
 import bt_in_order from "@code/BTInOrder";
-import { tree } from "./tree";
+import {tree} from "./tree";
 
 test("In order", function () {
     expect(bt_in_order(tree)).toEqual([

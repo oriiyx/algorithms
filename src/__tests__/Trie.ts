@@ -1,6 +1,6 @@
 import Trie from "@code/Trie";
 
-test("Trie", function() {
+test("Trie", function () {
     const trie = new Trie();
     trie.insert("foo");
     trie.insert("fool");

@@ -9,5 +9,5 @@ export function add_node_list(
         l = list[from] = [];
     }
 
-    l.push({ to, weight });
+    l.push({to, weight});
 }

@@ -1,4 +1,3 @@
-
 const a: number[] = [];
 
 function time(fn: () => void): number {
@@ -32,31 +31,31 @@ function pop(number: number) {
 }
 
 function get(idx: number) {
-    return function() {
+    return function () {
         return a[idx];
     };
 }
 
 function push_arr(count: number) {
-    return function() {
+    return function () {
         push(count);
     };
 }
 
 function pop_arr(count: number) {
-    return function() {
+    return function () {
         pop(count);
     };
 }
 
 function unshift_arr(count: number) {
-    return function() {
+    return function () {
         unshift(count);
     };
 }
 
 function shift_arr(count: number) {
-    return function() {
+    return function () {
         shift(count);
     };
 }

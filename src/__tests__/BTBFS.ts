@@ -1,5 +1,5 @@
 import bfs from "@code/BTBFS";
-import { tree } from "./tree";
+import {tree} from "./tree";
 
 test("bt bfs", function () {
     expect(bfs(tree, 45)).toEqual(true);
